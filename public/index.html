@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="src\App.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://blog.ipleaders.in/wp-content/uploads/2017/04/BV-Acharya-28.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Event Management</a>
+    <nav class="nav-items">
+      <a href="project.html">Home</a>
+      <a href="login.html">Signup</a>
+      <a href="us.html">About</a>
+      <a href="map.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Star Events</h1>
+      <p>Make Your Event Stand Out From The Rest</p>
+      <button>Learn More</button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <img src="images/pic1.jpg" alt="Trulli" width="400" height="333">
+         <a href="admin.html">WEDDING PLANNING</a>
+       <!-- <p class="work-heading">Wedding Planning</p>-->
+        <p class="work-heading1">YOUR WEDDING, YOUR WAY</p>
+        <p class="work-text">Find the best wedding vendors at Star Events with thousands of trusted reviews</p>
+      </div>
+      <div class="work">
+        <img src="images/pic2.jpg" alt="Trulli" width="400" height="333">
+         <a href="#">BIRTHDAY PARTIES</a>
+        <!--<p class="work-heading">Birthday Parties</p>-->
+        <p class="work-heading1">MAKE YOUR BIRTHDAY SPECIAL</p>
+        <p class="work-text">Let us handle the birthday party and you just enjoy your memorable moments, make your guests surprise by your best birthday bash in the town.</p>
+      </div>
+      <div class="work">
+        <img src="images/pic3.jpg" alt="Trulli" width="400" height="333">
+         <a href="#">HOUSE WARMING CEREMONIES</a>
+       <!-- <p class="work-heading">House Warming Ceremonies</p>-->
+        <p class="work-heading1">RELAX AND ENJOY THE MOMENT</p>
+        <p class="work-text">Moving house can be stressful enough without needing to plan a party. Our event planners understand this and do their best to ensure that the party runs perfectly smoothly.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>OUR COMPANY</h2>
+        <p>Star Events is a full-service event management company in Guntur dedicated to quality and excellence. Since our establishment, we have continuously strived towards the flawless execution of events and planning. We manage events across all major cities in India.</p>
+  <br><br><h2>MISSION</h2>
+        <p>No matter what your requirement may be, our priority lies in gaining an in-depth understanding of how your business works, what you hope to achieve, and what we can do to deliver results that exceed all expectations. We believe in flexibility with the clients.</p>
+        <br><br><h2>PASSION</h2>
+        <p>World of event management has changed tremendously in the last few years. We are a team of creative and innovative, passionate and enthusiastic with great interpersonal skills. We always ready to serve clients, best in the industries with good time management skills.</p>
+
+      </div>
+      <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="me">
+
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; Star Events</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">details</a>
+        <a href="us.html">About</a>
+        <a href="v.html">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
