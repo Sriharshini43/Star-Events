@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float:left; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+  <link rel="stylesheet" href="css/for.css">
+  
+</head>
+<h1>STAR EVENT PLANNERS</h1>
+<body>
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <div class="card">
+          <img src="http://backdoorcollectibles.com/wp-content/uploads/2017/05/event-manager.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-front">
+          <h1>Ava</h1>
+          <p><mark>Party host</mark></p>
+          <p>responsible for hosting a planned party, which may be for a birthday, anniversary or baby shower.
+            A great host is behind every party. Birthday party hosts are not all fun and games, so you should approach the hiring process with care.
+            If you love throwing a party and have good organizational skills, you should use your resume to get a job.</p>
+        </div>
+      </div>
+    </div>
+<div>
+  <p>   &emsp; </p></div>
+
+    <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="card">
+          <img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/23/Pictures/business-conference_c46de6e6-3916-11e6-9ae1-15e7618d0e32.JPG" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-front">
+          <h1>Elizabeth</h1>
+          <p><mark>Event coordinator</mark></p>
+          <p> Responsible for assisting an event planner or event manager with the planning and organization of an event.
+          Their main duties include selecting venues, determining the cost, arranging event services, and monitoring client approval.
+            They may work for an events company or as a contractor.</p>
+        </div>
+      </div>
+    </div>
+<div>
+  <p>   &emsp; </p></div>
+
+<div class="flip-card">
+  <div class="flip-card-front">
+    <div class="card">
+      <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE4iuYif2OSLA/profile-displayphoto-shrink_800_800/0/1624294343360?e=2147483647&v=beta&t=Gdx5QqSMuwLFjmh3-2TpsiRbOskOj6Yqbb5TDKNDSSY" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-front">
+      <h1>Jhon</h1>
+      <p><mark>Wedding planner</mark></p>
+      <p> The wedding planner must be well acquainted with the upcoming wedding trends that
+        clients will love to receive and the right palettes to paint their wedding day.
+        The profession of a wedding planner covers all facets of the day – from clothes and decorations to selecting the right banquet hall,
+        to food, drink, and music, and may also include lodging, convenience, and facilities for guests.
+        The wedding event plan can be large or small, based on the client couple’s demands,
+        needs, and most importantly budget which is to be kept in mind while drafting the plan</p>
+    </div>
+  </div>
+</div>
+</div>
+<p>Redirect to homepage<a href="admin.html">Click here</a>.</p>
+</body>
+</html>
