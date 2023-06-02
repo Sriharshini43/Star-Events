@@ -2,90 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Form</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/pay.css">
+
 </head>
-
 <body>
-    <div class="wrapper">
-        <h2>Payment Form</h2>
-        <form method="POST">
-            <h4>Account</h4>
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" required class="name">
-                    <i class="fa fa-user icon"></i>
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Nick Name" required class="name">
-                    <i class="fa fa-user icon"></i>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="email" placeholder="Email Adress" required class="name">
-                    <i class="fa fa-envelope icon"></i>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <h4> Date of Birth</h4>
-                    <input type="text" placeholder="DD" class="dob">
-                    <input type="text" placeholder="MM" class="dob">
-                    <input type="text" placeholder="YYYY" class="dob">
-                </div>
-                <div class="input-box">
-                    <h4> Gender</h4>
-                    <input type="radio" id="b1" name="gendar" checked class="radio">
-                    <label for="b1">Male</label>
-                    <input type="radio" id="b2" name="gendar" class="radio">
-                    <label for="b2">Female</label>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <h4>Payment Details</h4>
-                    <input type="radio" name="pay" id="bc1" checked class="radio">
-                    <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
-                    <input type="radio" name="pay" id="bc2" class="radio">
-                    <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="tel" placeholder="Card Number" required class="name">
-                    <i class="fa fa-credit-card icon"></i>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="tel" placeholder="Card CVC" required class="name">
-                    <i class="fa fa-user icon"></i>
-                </div>
-                <div class="input-box">
-                    <select>
-                        <option>01 jun</option>
-                        <option>02 jun</option>
-                        <option>03 jun</option>
-                    </select>
-                    <select>
-                        <option>2022</option>
-                        <option>2023</option>
-                        <option>2024</option>
-                    </select>
-                </div>
-            </div>
-            <div class="input-group">
-                <div class="input-box">
-                    <button type="submit">PAY NOW</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <p>Redirect to homepage : <a href="admin.html">Click here</a>.</p>
-</body>
 
-</html>
+<div class="container">
+
+    <form action="paysc.html" class="success">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="harshini" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="vizag">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="India">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mrs. harshini" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="march" >
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="666" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
